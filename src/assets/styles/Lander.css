@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  src: url(../fonts/BebasNeue-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Eina';
+  font-weight: 400;
+  src: url(../fonts/Eina03-Regular.ttf) format('truetype');
+}
+
+#lander {
+  background: #FFFFFF;
+}
+
+section {
+  height: 100vh;
+  padding: 6vw 5% 0;
+}
+
+img {
+  width: 45%;
+}
+
+h1 {
+  color: white;
+  font-family: 'Bebas Neue';
+  font-size: 8vw;
+  font-weight: 400;
+  line-height: 9vw;
+  letter-spacing: -0.25vw;
+  margin: 0;
+  text-align: left;
+}
+
+h2 {
+  color: #2B3144;
+  font-family: 'Bebas Neue';
+  font-size: 6vw;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+}
+
+h4 {
+  color: #414A69;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  line-height: 3.5;
+  margin: 0;
+  text-align: left;
+}
+
+p {
+  color: black;
+  font-family: 'Eina';
+  font-size: 1vw;
+  line-height: 1.8;
+}
+
+#section-one {
+  background: #FBC843;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#section-one .car-images {
+  background: white;
+  position: relative;
+  margin-top: auto;
+  height: 200px;
+  transform: translateX(-5%);
+  width: 100vw;
+}
+
+#section-one .car-images .car {
+  position: absolute;
+}
+
+#section-one .car-images .porsche {
+  z-index: 2;
+  left: 6%;
+  bottom: 110px;
+  width: 45.7vw;
+}
+
+#section-one .car-images .benz {
+  left: 23%;
+  bottom: 135px;
+  width: 43.8vw;
+}
+
+#section-one .car-images .audi {
+  left: -6.5%;
+  bottom: 135px;
+  width: 35vw;
+  transform: rotateY(180deg);
+}
+
+#section-one .phone {
+  position: absolute;
+  top: 100px;
+  right: 8%;
+  width: 35vh;
+  filter: drop-shadow(rgba(0, 0, 0, 0.4) -20px 20px 25px);
+}
+
+#section-five {
+  display: flex;
+  height: 70vh;
+  padding: 0 5%;
+  justify-content: space-between;
+}
+
+#section-five .feature {
+  align-items: center;
+  background: #F5F5F7;
+  display: flex;
+  flex-direction: column;
+  height: 28.3vw;
+  justify-content: center;
+  padding: 4.5%;
+  width: 28.3vw;
+}
+
+#section-five .feature img {
+  height: 30%;
+  width: auto;
+}
+
+#section-five .feature h3 {
+  color: #2B3144;
+  font-family: 'Bebas Neue';
+  font-size: 2.1vw;
+  font-weight: 400;
+  letter-spacing: -0.01vw;
+  line-height: 1;
+  margin: 2vw 0 1vw;
+}
+
+#section-five .feature p {
+  color: rgb(0, 0, 0);
+  font-size: 0.875vw;
+  font-weight: normal;
+  letter-spacing: -0.03vw;
+  line-height: 1.5;
+  margin: 0px;
+  text-align: left;
+}
