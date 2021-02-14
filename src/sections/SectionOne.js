@@ -12,12 +12,9 @@ const SectionOne = () => {
   return (
     <section id="section-one">
         <div className="yellow-bg"/>
-        <Logo />
+        <Logo className="logo-white"/>
         <h1>DRIVE A NEW<br/>CAR EVERY MONTH.</h1>
-        <div className="cta">
-          <h4>Available On the App Store</h4>
-          <button><img src={ArrowRight} alt="arrow right"/></button>
-        </div>
+        <button className="cta">Available On the App Store<img src={ArrowRight} alt="arrow right"/></button>
         <div className="car-images">
           <img src={Porsche} alt="Porsche" className="car porsche"/>
           <img src={Benz} alt="Mercedes Benz" className="car benz"/>

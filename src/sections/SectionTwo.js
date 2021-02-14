@@ -9,7 +9,7 @@ const SectionTwo = () => {
         <Carousel />
         <div className="text">
           <h2>SELECT A VEHICLE FROM YOUR PHONE.</h2>
-          <p>Select from a wide range of luxury vehicles in our inventory. Drive it for a month, trade it the next for something else you have always wanted to own.</p>
+          <p>Select from a wide range of luxury vehicles in our inventory.<br/>Drive it for a month, trade it the next for something else you have always wanted to own.</p>
         </div>
       </section>
   )

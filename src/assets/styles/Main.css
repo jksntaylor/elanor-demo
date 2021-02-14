@@ -43,15 +43,6 @@ h2 {
   margin: 0;
 }
 
-h4 {
-  color: #414A69;
-  font-size: 16px;
-  letter-spacing: -0.5px;
-  line-height: 3.5;
-  margin: 0;
-  text-align: left;
-}
-
 p {
   color: black;
   font-family: 'Eina';
@@ -59,11 +50,38 @@ p {
   line-height: 1.8;
 }
 
+.cta {
+  align-items: center;
+  background: none;
+  border: none;
+  color: #414A69;
+  display: flex;
+  font-family: 'Eina';
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: space-between;
+  letter-spacing: -0.5px;
+  line-height: 3.5;
+  margin: 0;
+  text-align: left;
+  width: 20%;
+}
+
+.cta img {
+  width: 30px;
+}
+
 #section-one {
   background: #FBC843;
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-top: 2vw;
+}
+
+#section-one .logo-white {
+  fill: white;
+  margin-bottom: 8vw;
 }
 
 #section-one .car-images {
@@ -107,6 +125,81 @@ p {
   filter: drop-shadow(rgba(0, 0, 0, 0.4) -20px 20px 25px);
 }
 
+#section-two {
+  display: flex;
+  justify-content: space-between;
+}
+
+#section-two .carousel {
+  background: #FBC843;
+  width: 36.5%;
+  position: relative;
+  height: 88%;
+}
+
+#section-two .carousel .buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 10%;
+  padding: 0 5%;
+}
+
+#section-two .carousel .buttons img {
+  width: 5%;
+  height: 40%;
+  margin: 0 3%;
+}
+
+#section-two .carousel .car-info {
+  padding: 0 20%;
+}
+
+#section-two .carousel .car-info h1 {
+  color: black;
+  font-size: 4vw;
+  letter-spacing: normal;
+}
+
+#section-two .carousel .car-info h2 {
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+#section-two .carousel .car-info div {
+  display: flex;
+  align-items: center;
+}
+
+#section-two .carousel .car-info div img {
+  width: 7%;
+}
+
+#section-two .carousel .car-info div h4 {
+  font-size: 1vw;
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  margin: 0 2%;
+}
+
+#section-two .carousel .car-info div h3 {
+  font-size: 2vw;
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  margin-left: 5%;
+}
+
+#section-two .carousel .car-image {
+  position: absolute;
+  right: -50%;
+  bottom: -5%;
+  width: 125%;
+}
+
+#section-two .text {
+  width: 50%;
+}
+
 #section-five {
   display: flex;
   height: 70vh;
@@ -148,4 +241,9 @@ p {
   line-height: 1.5;
   margin: 0px;
   text-align: left;
+}
+
+/* MOBILE STYLES */
+@media(max-width: 1023px) {
+
 }

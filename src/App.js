@@ -32,4 +32,3 @@ export default App;
 // CLARIFICATIONS FOR NATE:
 // 1. Available On the App should be Available On the App Store?
 // 2. favicon is different from logo. intentional?
-// 3. can I use scss and compile it?
