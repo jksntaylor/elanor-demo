@@ -1,12 +1,35 @@
-import './App.css';
-import Lander from './sections/Lander'
+import React from 'react'
 
-function App() {
+import SectionOne from './sections/SectionOne'
+import SectionTwo from './sections/SectionTwo'
+import SectionThree from './sections/SectionThree'
+import SectionFour from './sections/SectionFour'
+import SectionFive from './sections/SectionFive'
+import SectionSix from './sections/SectionSix'
+
+import './assets/styles/Main.css'
+
+const App = () => {
   return (
     <div className="App">
-      <Lander />
+      {/* LOADING PAGE */}
+      <main id="lander">
+        <SectionOne />
+        <SectionTwo />
+        <SectionThree />
+        <SectionFour />
+        <SectionFive />
+        <SectionSix />
+        {/* FOOTER */}
+      </main>
     </div>
   );
 }
 
 export default App;
+
+
+// CLARIFICATIONS FOR NATE:
+// 1. Available On the App should be Available On the App Store?
+// 2. favicon is different from logo. intentional?
+// 3. can I use scss and compile it?
