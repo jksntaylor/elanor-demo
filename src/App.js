@@ -1,5 +1,5 @@
 import './App.css';
-import Lander from './pages/Lander'
+import Lander from './sections/Lander'
 
 function App() {
   return (
