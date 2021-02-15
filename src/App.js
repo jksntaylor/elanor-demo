@@ -11,16 +11,17 @@ import Footer from './sections/Footer'
 import './assets/styles/Main.css'
 
 const App = () => {
+  let isMobile = window.innerWidth < 1024 ? true : false
   return (
     <div className="App">
       {/* LOADING PAGE */}
       <main id="lander">
-        <SectionOne />
-        <SectionTwo />
-        <SectionThree />
-        <SectionFour />
-        <SectionFive />
-        <SectionSix />
+        <SectionOne isMobile={isMobile}/>
+        <SectionTwo isMobile={isMobile} />
+        <SectionThree isMobile={isMobile} />
+        <SectionFour isMobile={isMobile} />
+        <SectionFive isMobile={isMobile} />
+        <SectionSix isMobile={isMobile} />
         <Footer />
       </main>
     </div>
@@ -28,8 +29,3 @@ const App = () => {
 }
 
 export default App;
-
-
-// CLARIFICATIONS FOR NATE:
-// 1. Available On the App should be Available On the App Store?
-// 2. favicon is different from logo. intentional?

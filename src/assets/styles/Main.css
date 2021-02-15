@@ -32,6 +32,7 @@ h1 {
   letter-spacing: -0.25vw;
   margin: 0;
   text-align: left;
+  z-index: 1;
 }
 
 h2 {
@@ -41,6 +42,7 @@ h2 {
   font-weight: 400;
   line-height: 1;
   margin: 0;
+  z-index: 1;
 }
 
 h5 {
@@ -71,6 +73,7 @@ p {
   text-align: left;
   width: 18%;
   padding: 0;
+  z-index: 1;
 }
 
 .cta img {
@@ -78,7 +81,7 @@ p {
 }
 
 #section-one {
-  background: #FBC843;
+  /* background: #FBC843; */
   display: flex;
   flex-direction: column;
   position: relative;
@@ -86,13 +89,23 @@ p {
   padding-bottom: 0;
 }
 
+#section-one .yellow-bg {
+  width: 100%;
+  height: 80%;
+  background: #FBC843;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 0;
+}
+
 #section-one .logo-white {
   fill: white;
   margin-bottom: 8vh;
+  z-index: 1;
 }
 
 #section-one .car-images {
-  background: white;
   position: relative;
   margin-top: auto;
   height: 200px;
@@ -141,6 +154,13 @@ p {
   background: #FBC843;
   width: 36.5%;
   position: relative;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+#section-two .carousel .content {
+  width: 100%;
   height: 100%;
 }
 
