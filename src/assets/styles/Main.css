@@ -234,6 +234,11 @@ p {
   width: 55%;
 }
 
+#section-two .text h2 {
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
 #section-two .text p {
   width: 80%;
 }
