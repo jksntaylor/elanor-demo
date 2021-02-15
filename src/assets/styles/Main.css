@@ -16,7 +16,7 @@
 
 section {
   height: 100vh;
-  padding: 6vw 5% 0;
+  padding: 6vw 5%;
 }
 
 img {
@@ -43,6 +43,11 @@ h2 {
   margin: 0;
 }
 
+h5 {
+  font-family: 'Eina';
+  font-size: 0.8vw;
+}
+
 p {
   color: black;
   font-family: 'Eina';
@@ -57,14 +62,15 @@ p {
   color: #414A69;
   display: flex;
   font-family: 'Eina';
-  font-size: 16px;
+  font-size: 1vw;
   font-weight: bold;
   justify-content: space-between;
   letter-spacing: -0.5px;
   line-height: 3.5;
   margin: 0;
   text-align: left;
-  width: 20%;
+  width: 18%;
+  padding: 0;
 }
 
 .cta img {
@@ -77,11 +83,12 @@ p {
   flex-direction: column;
   position: relative;
   padding-top: 2vw;
+  padding-bottom: 0;
 }
 
 #section-one .logo-white {
   fill: white;
-  margin-bottom: 8vw;
+  margin-bottom: 8vh;
 }
 
 #section-one .car-images {
@@ -134,7 +141,7 @@ p {
   background: #FBC843;
   width: 36.5%;
   position: relative;
-  height: 88%;
+  height: 100%;
 }
 
 #section-two .carousel .buttons {
@@ -146,9 +153,10 @@ p {
 }
 
 #section-two .carousel .buttons img {
-  width: 5%;
+  width: 10%;
   height: 40%;
-  margin: 0 3%;
+  padding: 0 3%;
+  cursor: pointer;
 }
 
 #section-two .carousel .car-info {
@@ -206,6 +214,93 @@ p {
   width: 55%;
 }
 
+#section-two .text p {
+  width: 80%;
+}
+
+#section-three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#section-three .text {
+  width: 30%;
+}
+
+#section-three .text p {
+  width: 80%;
+}
+
+#section-three .map-container {
+  background: url(../images/map.png) center/contain no-repeat;
+  position: relative;
+  width: 60%;
+  height: 100%;
+}
+
+#section-three .map-container img {
+  position: absolute;
+}
+
+#section-three .map-container .map-bg {
+  width: 90%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#section-three .map-container .delivery {
+  height: 100%;
+  width: 35%;
+  right: 20%;
+  object-fit: contain;
+  filter: drop-shadow(rgba(0, 0, 0, 0.4) -20px 20px 25px);
+}
+
+#section-three .map-container .porsche {
+  width: 55%;
+  left: -15%;
+  top: 50%;
+  transform: translateY(125%);
+}
+
+#section-four {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#section-four .vehicle-swap {
+  background: #FBC843;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#section-four .vehicle-swap .porsche-front {
+  width: 115%;
+}
+
+#section-four .vehicle-swap .screenshot {
+  position: absolute;
+  right: -30%;
+  height: 90%;
+  object-fit: contain;
+  width: 80%;
+}
+
+#section-four .text {
+  width: 50%;
+}
+
+#section-four .text p {
+  width: 65%;
+}
+
 #section-five {
   display: flex;
   height: 70vh;
@@ -247,6 +342,73 @@ p {
   line-height: 1.5;
   margin: 0px;
   text-align: left;
+}
+
+#section-six {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#section-six .dude-container {
+  height: 100%;
+  width: 40%;
+  background: #FBC843;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+#section-six .dude-container .dude {
+  height: 95%;
+  width: 70%;
+  object-fit: contain;
+  object-position: bottom;
+  transform: rotateY(180deg);
+}
+
+#section-six .dude-container .benz {
+  position: absolute;
+  bottom: -10%;
+  right: -70%;
+  width: 125%;
+}
+
+#section-six .text {
+  width: 55%;
+  padding-right: 10%;
+}
+
+#section-six .text p {
+  width: 65%;
+}
+
+#section-six .text h5 {
+  padding-bottom: 50px;
+  border-bottom: 4px solid #F4F4F5;
+}
+
+#section-six .text .cta {
+  width: 40%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 5%;
+}
+
+footer .logo-black {
+  fill: #171A25;
+  margin-right: auto;
+}
+
+footer h6 {
+  color: #4F5874;
+  font-family: 'Eina';
+  font-size: 0.8vw;
+  margin: 0 2%;
 }
 
 /* MOBILE STYLES */

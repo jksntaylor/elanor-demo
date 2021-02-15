@@ -6,6 +6,7 @@ import SectionThree from './sections/SectionThree'
 import SectionFour from './sections/SectionFour'
 import SectionFive from './sections/SectionFive'
 import SectionSix from './sections/SectionSix'
+import Footer from './sections/Footer'
 
 import './assets/styles/Main.css'
 
@@ -20,7 +21,7 @@ const App = () => {
         <SectionFour />
         <SectionFive />
         <SectionSix />
-        {/* FOOTER */}
+        <Footer />
       </main>
     </div>
   );
