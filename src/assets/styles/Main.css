@@ -152,23 +152,27 @@ p {
 }
 
 #section-two .carousel .car-info {
-  padding: 0 20%;
+  padding: 0 22%;
+  margin-top: 15%;
 }
 
 #section-two .carousel .car-info h1 {
   color: black;
   font-size: 4vw;
   letter-spacing: normal;
+  line-height: 1;
 }
 
 #section-two .carousel .car-info h2 {
   font-size: 1vw;
   font-weight: 300;
+  margin-bottom: 20%;
 }
 
 #section-two .carousel .car-info div {
   display: flex;
   align-items: center;
+  margin: 5% 0;
 }
 
 #section-two .carousel .car-info div img {
@@ -180,13 +184,14 @@ p {
   font-family: 'Bebas Neue';
   font-weight: 400;
   margin: 0 2%;
+  width: 10%;
 }
 
 #section-two .carousel .car-info div h3 {
   font-size: 2vw;
   font-family: 'Bebas Neue';
   font-weight: 400;
-  margin-left: 5%;
+  margin: 0 0 0 5%;
 }
 
 #section-two .carousel .car-image {
@@ -197,7 +202,8 @@ p {
 }
 
 #section-two .text {
-  width: 50%;
+  padding: 5% 10% 0 0;
+  width: 55%;
 }
 
 #section-five {
