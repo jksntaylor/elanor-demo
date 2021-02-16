@@ -331,6 +331,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 6vw 0;
+  overflow-x: hidden;
 }
 
 #section-four .vehicle-swap {
@@ -341,6 +345,7 @@ p {
   align-items: center;
   justify-content: center;
   position: relative;
+  transform: translateX(-100%);
 }
 
 #section-four .vehicle-swap .porsche-front {
@@ -353,14 +358,23 @@ p {
   height: 90%;
   object-fit: contain;
   width: 80%;
+  transform: translateY(-15%);
+  opacity: 0;
 }
 
 #section-four .text {
   width: 50%;
 }
 
+#section-four .text h2 {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
 #section-four .text p {
   width: 65%;
+  transform: translateY(-100%);
+  opacity: 0;
 }
 
 #section-five {
@@ -380,6 +394,8 @@ p {
   justify-content: center;
   padding: 4.5%;
   width: 28.3vw;
+  transform: translateY(-25%);
+  opacity: 0;
 }
 
 #section-five .feature:nth-of-type(1) p {

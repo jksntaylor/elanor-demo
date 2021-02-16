@@ -16,9 +16,9 @@ const SectionFive = props => {
   useEffect(() => {
     if (!props.isMobile && inView && !animationRan) {
       // animations
-      gsap.from([featureOneRef.current], {y: '-25%', opacity: 0,})
-      gsap.from([featureTwoRef.current], {y: '-25%', opacity: 0, delay: 0.2})
-      gsap.from([featureThreeRef.current], {y: '-25%', opacity: 0, delay: 0.4})
+      gsap.to([featureOneRef.current], {y: 0, opacity: 1,})
+      gsap.to([featureTwoRef.current], {y: 0, opacity: 1, delay: 0.25})
+      gsap.to([featureThreeRef.current], {y: 0, opacity: 1, delay: 0.5})
       setAnimationRan(true)
     }
   })
