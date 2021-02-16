@@ -17,10 +17,10 @@ const SectionFour = props => {
 
   useEffect(() => {
     if (!props.isMobile && inView && !animationRan) {
-      gsap.to([carRef.current], {x: 0, duration: 0.5})
-      gsap.to([screenshotRef.current], {y: 0, opacity: 1, duration: 0.5, delay: 0.5})
-      gsap.to([titleRef.current], {y: 0, opacity: 1, duration: 0.5, delay: 0.75})
-      gsap.to([paragraphRef.current], {y: 0, opacity: 1, duration: 0.5, delay: 1})
+      gsap.to([carRef.current], {x: 0, duration: 0.4})
+      gsap.to([screenshotRef.current], {y: 0, opacity: 1, duration: 0.5, delay: 0.3})
+      gsap.to([titleRef.current], {y: 0, opacity: 1, duration: 0.5, delay: 0.5})
+      gsap.to([paragraphRef.current], {y: 0, opacity: 1, duration: 0.5, delay: 0.6})
       setAnimationRan(true)
     }
   })

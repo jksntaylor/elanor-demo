@@ -439,6 +439,10 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 6vw 0;
+  overflow-x: hidden;
 }
 
 #section-six .dude-container {
@@ -449,6 +453,7 @@ p {
   justify-content: center;
   align-items: flex-end;
   position: relative;
+  transform: translateX(-100%);
 }
 
 #section-six .dude-container .dude {
@@ -456,19 +461,23 @@ p {
   width: 70%;
   object-fit: contain;
   object-position: bottom;
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) translateX(100%);
+  opacity: 0;
 }
 
 #section-six .dude-container .benz {
   position: absolute;
   bottom: -10%;
-  right: -70%;
+  right: -15%;
   width: 125%;
+  opacity: 0;
 }
 
 #section-six .text {
   width: 55%;
   padding-right: 10%;
+  transform: translateY(-15%);
+  opacity: 0;
 }
 
 #section-six .text p {
