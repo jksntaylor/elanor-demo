@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/reform-collective-demo/static/css/main.2589fe96.chunk.css",
+    "main.js": "/reform-collective-demo/static/js/main.f0ee22e7.chunk.js",
+    "main.js.map": "/reform-collective-demo/static/js/main.f0ee22e7.chunk.js.map",
+    "runtime-main.js": "/reform-collective-demo/static/js/runtime-main.766ca2b5.js",
+    "runtime-main.js.map": "/reform-collective-demo/static/js/runtime-main.766ca2b5.js.map",
+    "static/js/2.57adaee3.chunk.js": "/reform-collective-demo/static/js/2.57adaee3.chunk.js",
+    "static/js/2.57adaee3.chunk.js.map": "/reform-collective-demo/static/js/2.57adaee3.chunk.js.map",
+    "static/js/3.f8834884.chunk.js": "/reform-collective-demo/static/js/3.f8834884.chunk.js",
+    "static/js/3.f8834884.chunk.js.map": "/reform-collective-demo/static/js/3.f8834884.chunk.js.map",
+    "index.html": "/reform-collective-demo/index.html",
+    "static/css/main.2589fe96.chunk.css.map": "/reform-collective-demo/static/css/main.2589fe96.chunk.css.map",
+    "static/js/2.57adaee3.chunk.js.LICENSE.txt": "/reform-collective-demo/static/js/2.57adaee3.chunk.js.LICENSE.txt",
+    "static/media/Main.css": "/reform-collective-demo/static/media/Eina03-Regular.5a3070b9.ttf",
+    "static/media/arrow-left.bba1ea0f.svg": "/reform-collective-demo/static/media/arrow-left.bba1ea0f.svg",
+    "static/media/arrow-right.40ab290f.svg": "/reform-collective-demo/static/media/arrow-right.40ab290f.svg",
+    "static/media/audi.e1799665.png": "/reform-collective-demo/static/media/audi.e1799665.png",
+    "static/media/benz.092b65fb.png": "/reform-collective-demo/static/media/benz.092b65fb.png",
+    "static/media/coin.67700eb4.svg": "/reform-collective-demo/static/media/coin.67700eb4.svg",
+    "static/media/current-vehicle-screenshot.0d288d5a.png": "/reform-collective-demo/static/media/current-vehicle-screenshot.0d288d5a.png",
+    "static/media/delivery-screenshot.3557d5a1.png": "/reform-collective-demo/static/media/delivery-screenshot.3557d5a1.png",
+    "static/media/document.80fb3649.svg": "/reform-collective-demo/static/media/document.80fb3649.svg",
+    "static/media/dude.acc6a390.png": "/reform-collective-demo/static/media/dude.acc6a390.png",
+    "static/media/gauge.c1e05271.svg": "/reform-collective-demo/static/media/gauge.c1e05271.svg",
+    "static/media/land-rover.66680d2a.png": "/reform-collective-demo/static/media/land-rover.66680d2a.png",
+    "static/media/line-graph.fda757aa.svg": "/reform-collective-demo/static/media/line-graph.fda757aa.svg",
+    "static/media/logo.c636385b.svg": "/reform-collective-demo/static/media/logo.c636385b.svg",
+    "static/media/map.206403fb.png": "/reform-collective-demo/static/media/map.206403fb.png",
+    "static/media/porsche-front.6e2a0b12.png": "/reform-collective-demo/static/media/porsche-front.6e2a0b12.png",
+    "static/media/porsche-left.046fdd46.png": "/reform-collective-demo/static/media/porsche-left.046fdd46.png",
+    "static/media/porsche.b026fdd2.png": "/reform-collective-demo/static/media/porsche.b026fdd2.png",
+    "static/media/pump.5ecbf50d.svg": "/reform-collective-demo/static/media/pump.5ecbf50d.svg",
+    "static/media/vehicle-swap-screenshot.fd798d2b.png": "/reform-collective-demo/static/media/vehicle-swap-screenshot.fd798d2b.png",
+    "static/media/wrench.b1bfd1e1.svg": "/reform-collective-demo/static/media/wrench.b1bfd1e1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.766ca2b5.js",
+    "static/js/2.57adaee3.chunk.js",
+    "static/css/main.2589fe96.chunk.css",
+    "static/js/main.f0ee22e7.chunk.js"
+  ]
+}
