@@ -20,8 +20,11 @@ const SectionThree = props => {
   useEffect(() => {
     if (!props.isMobile && inView && !animationRan) {
       // animations
-      gsap.from([mapRef.current], {x: '100%', duration: 1})
-      gsap.from([deliveryRef.current], {top: '-10%', opacity: 0, delay: 1})
+      gsap.to([mapRef.current], {x: 0, duration: 0.5})
+      gsap.to([titleRef.current], {y: 0, opacity: 1, delay: 0.1, duration: 0.5})
+      gsap.to([paragraphRef.current], {y: 0, opacity: 1, delay: 0.4, duration: 0.5})
+      gsap.to([carRef.current], {left: '-15%', opacity: 1, delay: 0.4, duration: 0.5})
+      gsap.to([deliveryRef.current], {top: 0, opacity: 1, delay: 0.5})
       setAnimationRan(true)
     }
   })

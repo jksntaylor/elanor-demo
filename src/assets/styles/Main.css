@@ -280,8 +280,15 @@ p {
   width: 30%;
 }
 
+#section-three .text h2 {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
 #section-three .text p {
   width: 80%;
+  transform: translateY(-100%);
+  opacity: 0;
 }
 
 #section-three .map-container {
@@ -299,19 +306,23 @@ p {
 
 #section-three .map-container .map {
   width: 100%;
+  transform: translateX(100%);
 }
 
 #section-three .map-container .delivery {
   height: 100%;
   width: 35%;
   right: 20%;
+  top: -10%;
+  opacity: 0;
   object-fit: contain;
   filter: drop-shadow(rgba(0, 0, 0, 0.4) -20px 20px 25px);
 }
 
 #section-three .map-container .porsche {
   width: 55%;
-  left: -15%;
+  left: -35%;
+  opacity: 0;
   top: 50%;
   transform: translateY(125%);
 }
