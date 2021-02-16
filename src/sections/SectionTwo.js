@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
-import { Transition, TransitionGroup } from 'react-transition-group'
+import { Transition } from 'react-transition-group'
 import { gsap } from 'gsap'
 
 import ArrowLeft from '../assets/images/arrow-left.svg'
@@ -32,6 +32,7 @@ const SectionTwo = props => {
   }
 
   const [currentCar, setCurrentCar] = useState('landRover')
+
   const [animationRan, setAnimationRan] = useState(false)
 
   const handleClick = () => setCurrentCar(currentCar === 'landRover' ? 'porsche' : 'landRover')
@@ -46,13 +47,12 @@ const SectionTwo = props => {
 
   useEffect(() => {
     if (!props.isMobile && inView && !animationRan) {
-      // animations in delay order
-      // todo: convert title to gsap.to
+      // animations
       gsap.to([carouselRef.current], {scaleX: 1})
-      gsap.from([carRef.current], {x: '100%', opacity: 0, delay: 0.2})
-      gsap.to([titleRef.current], {y: '0', opacity: 1, delay: 0.2})
-      gsap.from([paragraphRef.current], {y: '-100%', opacity: 0, delay: 0.5})
-      gsap.from([carouselContentRef.current], {opacity: 0, delay: 0.6})
+      gsap.to([carRef.current], {x: 0, opacity: 1, delay: 0.2})
+      gsap.to([titleRef.current], {y: 0, opacity: 1, delay: 0.2})
+      gsap.to([paragraphRef.current], {y: 0, opacity: 1, delay: 0.5})
+      gsap.to([carouselContentRef.current], {opacity: 1, delay: 0.6})
       setAnimationRan(true)
     }
   })
@@ -60,38 +60,36 @@ const SectionTwo = props => {
   return (
     <section id="section-two" ref={sectionRef}>
         <div className="carousel" ref={carouselRef}>
-          <TransitionGroup>
-            <div className="content" ref={carouselContentRef}>
-              <div className="buttons">
-                <img src={ArrowLeft} alt="Arrow Left" onClick={handleClick}/>
-                <img src={ArrowRight} alt="Arrow Right" onClick={handleClick}/>
-              </div>
-              <Transition>
-                <div className="car-info">
-                  <h1>{carData[currentCar].make}</h1>
-                  <h2>{carData[currentCar].model}</h2>
-                  <div className="mpg">
-                    <img src={Pump} alt="Gas Pump"/>
-                    <h4>MPG</h4>
-                    <h3>{carData[currentCar].mpg}</h3>
-                  </div>
-                  <div className="hp">
-                    <img src={Graph} alt="Line Graph"/>
-                    <h4>HP</h4>
-                    <h3>{carData[currentCar].hp}</h3>
-                  </div>
-                  <div className="zeroSixty">
-                    <img src={Gauge} alt="Speedometer"/>
-                    <h4>0-60</h4>
-                    <h3>{carData[currentCar].zeroSixty}</h3>
-                  </div>
-                </div>
-              </Transition>
+          <div className="content" ref={carouselContentRef}>
+            <div className="buttons">
+              <img src={ArrowLeft} alt="Arrow Left" onClick={handleClick}/>
+              <img src={ArrowRight} alt="Arrow Right" onClick={handleClick}/>
             </div>
             <Transition>
-              <img className="car-image" src={carData[currentCar].img} alt="car" ref={carRef}/>
+              <div className="car-info">
+                <h1>{carData[currentCar].make}</h1>
+                <h2>{carData[currentCar].model}</h2>
+                <div className="mpg">
+                  <img src={Pump} alt="Gas Pump"/>
+                  <h4>MPG</h4>
+                  <h3>{carData[currentCar].mpg}</h3>
+                </div>
+                <div className="hp">
+                  <img src={Graph} alt="Line Graph"/>
+                  <h4>HP</h4>
+                  <h3>{carData[currentCar].hp}</h3>
+                </div>
+                <div className="zeroSixty">
+                  <img src={Gauge} alt="Speedometer"/>
+                  <h4>0-60</h4>
+                  <h3>{carData[currentCar].zeroSixty}</h3>
+                </div>
+              </div>
             </Transition>
-          </TransitionGroup>
+          </div>
+          <Transition>
+            <img className="car-image" src={carData[currentCar].img} alt="car" ref={carRef}/>
+          </Transition>
         </div>
         <div className="text">
           <h2 ref={titleRef}>SELECT A VEHICLE FROM YOUR PHONE.</h2>

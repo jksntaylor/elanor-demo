@@ -18,12 +18,11 @@ const SectionOne = props => {
   // animations
   useEffect(() => {
     if (!props.isMobile) {
-      gsap.to([yellowBgRef.current], {left: 0, duration: 1})
-      // ^ bg was starting at finished position so this had to switch to gsap.to
-      gsap.from([phoneRef.current], {right: '-2%', opacity: 0, duration: 1, delay: .9})
-      gsap.from([carsRef.current], {x: '-100%', delay: 0.2, duration: 1})
-      gsap.from([h1Ref.current], {y: '-25%', opacity: 0, duration: .6, delay: .9})
-      gsap.from([ctaRef.current], {y: '-120%', opacity: 0, duration: .6, delay: 1.2})
+      gsap.to([yellowBgRef.current], {left: 0, duration: 0.5})
+      gsap.to([carsRef.current], {x: '-5%', delay: 0.2, duration: 0.5})
+      gsap.to([h1Ref.current], {y: 0, opacity: 1, duration: 0.5, delay: 0.5})
+      gsap.to([ctaRef.current], {y: 0, opacity: 1, duration: 0.5, delay: 0.6})
+      gsap.to([phoneRef.current], {right: '8%', opacity: 1, duration: 0.5, delay:0.5})
     }
   }, [])
 
