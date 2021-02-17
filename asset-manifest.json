@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/reform-collective-demo/static/css/main.05eedb95.chunk.css",
-    "main.js": "/reform-collective-demo/static/js/main.fbedde27.chunk.js",
-    "main.js.map": "/reform-collective-demo/static/js/main.fbedde27.chunk.js.map",
+    "main.js": "/reform-collective-demo/static/js/main.beb9f430.chunk.js",
+    "main.js.map": "/reform-collective-demo/static/js/main.beb9f430.chunk.js.map",
     "runtime-main.js": "/reform-collective-demo/static/js/runtime-main.ab0ced24.js",
     "runtime-main.js.map": "/reform-collective-demo/static/js/runtime-main.ab0ced24.js.map",
     "static/js/2.f9f73679.chunk.js": "/reform-collective-demo/static/js/2.f9f73679.chunk.js",
@@ -38,6 +38,6 @@
     "static/js/runtime-main.ab0ced24.js",
     "static/js/2.f9f73679.chunk.js",
     "static/css/main.05eedb95.chunk.css",
-    "static/js/main.fbedde27.chunk.js"
+    "static/js/main.beb9f430.chunk.js"
   ]
 }
