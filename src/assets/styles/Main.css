@@ -681,6 +681,7 @@ footer h6 {
   #section-three {
     width: 100%;
     flex-direction: column;
+    margin-top: 35%;
   }
 
   #section-three .text {
@@ -719,6 +720,7 @@ footer h6 {
     width: 100%;
     flex-direction: column-reverse;
     align-items: flex-start;
+    margin-top: 15%;
   }
 
   #section-four .text {
@@ -743,6 +745,7 @@ footer h6 {
     flex-direction: column;
     padding: 0;
     height: auto;
+    margin-top: 15%;
   }
 
   #section-five .feature {
@@ -800,6 +803,7 @@ footer h6 {
 
   #section-six .text .cta {
     width: 70%;
+    margin-bottom: 5%;
   }
 
   #section-six .dude-container {
