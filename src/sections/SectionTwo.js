@@ -47,19 +47,19 @@ const SectionTwo = props => {
     else setTransitionRunning(true)
 
     if (!props.isMobile && currentCar === 'landRover') {
-      document.getElementById('landRover-info').className = 'car-info leaving'
-      document.getElementById('porsche-info').className = 'car-info entering'
-      document.getElementById('landRover-image').className = 'car-image leaving'
-      document.getElementById('porsche-image').className = 'car-image entering'
+      landRoverInfoRef.current.className = 'car-info leaving'
+      porscheInfoRef.current.className = 'car-info entering'
+      landRoverImageRef.current.className = 'car-image leaving'
+      porscheImageRef.current.className = 'car-image entering'
       setTimeout(() => {
         setTransitionRunning(false)
       }, 550);
     }
     else if (!props.isMobile) {
-      document.getElementById('landRover-info').className = 'car-info entering'
-      document.getElementById('porsche-info').className = 'car-info leaving'
-      document.getElementById('landRover-image').className = 'car-image entering'
-      document.getElementById('porsche-image').className = 'car-image leaving'
+      landRoverInfoRef.current.className = 'car-info entering'
+      porscheInfoRef.current.className = 'car-info leaving'
+      landRoverImageRef.current.className = 'car-image entering'
+      porscheImageRef.current.className = 'car-image leaving'
       setTimeout(() => {
         setTransitionRunning(false)
       }, 550);
