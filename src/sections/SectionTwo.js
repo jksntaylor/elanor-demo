@@ -38,10 +38,14 @@ const SectionTwo = props => {
 
   // this is ugly code I'm aware, but it works.
   const handleClick = () => {
+    if (props.isMobile) {
+      setCurrentCar(currentCar === 'landRover' ? 'porsche' : 'landRover')
+      return
+    }
     if (transitionRunning) return
     else setTransitionRunning(true)
 
-    if (currentCar === 'landRover') {
+    if (!props.isMobile && currentCar === 'landRover') {
       document.getElementById('landRover-info').className = 'car-info leaving'
       document.getElementById('porsche-info').className = 'car-info entering'
       document.getElementById('landRover-image').className = 'car-image leaving'
@@ -56,7 +60,7 @@ const SectionTwo = props => {
         setTransitionRunning(false)
       }, 600);
     }
-    else {
+    else if (!props.isMobile) {
       document.getElementById('landRover-info').className = 'car-info entering'
       document.getElementById('porsche-info').className = 'car-info leaving'
       document.getElementById('landRover-image').className = 'car-image entering'
@@ -108,6 +112,7 @@ const SectionTwo = props => {
               <img src={ArrowLeft} alt="Arrow Left" onClick={handleClick}/>
               <img src={ArrowRight} alt="Arrow Right" onClick={handleClick}/>
             </div>
+            {!props.isMobile ?
             <div className="car-info-transition-container">
               <div id="landRover-info" className="car-info visible" ref={landRoverInfoRef}>
                 <h1>{carData.landRover.make}</h1>
@@ -148,9 +153,31 @@ const SectionTwo = props => {
                 </div>
               </div>
             </div>
+            :
+            <div className="car-info">
+              <h1>{carData[currentCar].make}</h1>
+              <h2>{carData[currentCar].model}</h2>
+              <div className="mpg">
+                <img src={Pump} alt="Gas Pump"/>
+                <h4>MPG</h4>
+                <h3>{carData[currentCar].mpg}</h3>
+              </div>
+              <div className="hp">
+                <img src={Graph} alt="Line Graph"/>
+                <h4>HP</h4>
+                <h3>{carData[currentCar].hp}</h3>
+              </div>
+              <div className="zeroSixty">
+                <img src={Gauge} alt="Speedometer"/>
+                <h4>0-60</h4>
+                <h3>{carData[currentCar].zeroSixty}</h3>
+              </div>
+            </div>
+            }
           </div>
-          <img id="landRover-image" className="car-image" src={carData.landRover.img} alt="car" ref={landRoverImageRef}/>
-          <img id="porsche-image" className="car-image" src={carData.porsche.img} alt="car" ref={porscheImageRef}/>
+          {!props.isMobile && <img id="landRover-image" className="car-image" src={carData.landRover.img} alt="car" ref={landRoverImageRef}/>}
+          {!props.isMobile && <img id="porsche-image" className="car-image" src={carData.porsche.img} alt="car" ref={porscheImageRef}/>}
+          {props.isMobile && <img className="car-image" src={carData[currentCar].img} alt="car"/>}
         </div>
         <div className="text">
           <h2 ref={titleRef}>SELECT A VEHICLE FROM YOUR PHONE.</h2>

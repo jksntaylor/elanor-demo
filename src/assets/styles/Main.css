@@ -702,6 +702,8 @@ footer h6 {
     width: 55%;
     padding: 10% 5%;
     margin: 0;
+    position: initial;
+    opacity: 1;
   }
 
   #section-two .carousel .car-info h1 {
