@@ -10,8 +10,10 @@
   src: url(../fonts/Eina03-Regular.ttf) format('truetype');
 }
 
-#lander {
+body {
   background: #FFFFFF;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 section {
@@ -527,7 +529,7 @@ p {
 
 #section-six .dude-container .benz {
   position: absolute;
-  bottom: -10%;
+  bottom: -6vw;
   right: -15%;
   width: 125%;
   opacity: 0;
