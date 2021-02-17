@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/reform-collective-demo/static/css/main.05f58197.chunk.css",
+    "main.css": "/reform-collective-demo/static/css/main.5303fb56.chunk.css",
     "main.js": "/reform-collective-demo/static/js/main.d5360c63.chunk.js",
     "main.js.map": "/reform-collective-demo/static/js/main.d5360c63.chunk.js.map",
     "runtime-main.js": "/reform-collective-demo/static/js/runtime-main.ab0ced24.js",
@@ -10,7 +10,7 @@
     "static/js/3.25ef246b.chunk.js": "/reform-collective-demo/static/js/3.25ef246b.chunk.js",
     "static/js/3.25ef246b.chunk.js.map": "/reform-collective-demo/static/js/3.25ef246b.chunk.js.map",
     "index.html": "/reform-collective-demo/index.html",
-    "static/css/main.05f58197.chunk.css.map": "/reform-collective-demo/static/css/main.05f58197.chunk.css.map",
+    "static/css/main.5303fb56.chunk.css.map": "/reform-collective-demo/static/css/main.5303fb56.chunk.css.map",
     "static/js/2.f9f73679.chunk.js.LICENSE.txt": "/reform-collective-demo/static/js/2.f9f73679.chunk.js.LICENSE.txt",
     "static/media/Main.css": "/reform-collective-demo/static/media/Eina03-Regular.5a3070b9.ttf",
     "static/media/arrow-left.bba1ea0f.svg": "/reform-collective-demo/static/media/arrow-left.bba1ea0f.svg",
@@ -38,7 +38,7 @@
   "entrypoints": [
     "static/js/runtime-main.ab0ced24.js",
     "static/js/2.f9f73679.chunk.js",
-    "static/css/main.05f58197.chunk.css",
+    "static/css/main.5303fb56.chunk.css",
     "static/js/main.d5360c63.chunk.js"
   ]
 }
