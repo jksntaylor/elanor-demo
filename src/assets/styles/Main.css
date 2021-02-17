@@ -107,7 +107,7 @@ p {
   justify-content: center;
   border-radius: 50%;
   border: 2px solid #7B87AF;
-  position: relative;
+  position: fixed;
   animation: rotate 3000ms infinite linear;
 }
 
