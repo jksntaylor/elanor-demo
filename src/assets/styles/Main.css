@@ -208,6 +208,32 @@ p {
   overflow-x: visible;
 }
 
+@keyframes info-leave {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  99% {
+    transform: translateY(-25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(25%);
+    opacity: 0;
+  }
+}
+
+@keyframes info-enter {
+  0% {
+    transform: translateY(25%);
+    opacity: 0
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 #section-two .carousel .car-info {
   padding: 0 22%;
   margin-top: 15%;
@@ -218,23 +244,11 @@ p {
 }
 
 #section-two .carousel .car-info.leaving {
-  transform: translateY(-25%);
-  opacity: 0 !important;
-}
-
-#section-two .carousel .car-info.hidden {
-  transform: translateY(25%);
-  opacity: 0 !important;
+  animation: info-leave 500ms ease forwards;
 }
 
 #section-two .carousel .car-info.entering {
-  transform: translateY(0);
-  opacity: 1 !important;
-}
-
-#section-two .carousel .car-info.visible {
-  transform: translateY(0);
-  opacity: 1 !important;
+  animation: info-enter 500ms ease forwards;
 }
 
 #section-two .carousel .car-info h1 {
@@ -284,33 +298,40 @@ p {
   opacity: 0;
 }
 
-#section-two .carousel .leaving,
-#section-two .carousel .hidden,
-#section-two .carousel .entering,
-#section-two .carousel .visible {
-  transition: all 500ms ease
+@keyframes image-leave {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  99% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
 }
 
+@keyframes image-enter {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
 
 #section-two .carousel .car-image.leaving {
-  transform: translateX(-50%) !important;
-  opacity: 0 !important;
-}
-
-#section-two .carousel .car-image.hidden {
-  transform: translateX(50%) !important;
-  opacity: 0 !important;
+  animation: image-leave 500ms ease forwards;
 }
 
 #section-two .carousel .car-image.entering {
-  transform: none;
-  opacity: 1 !important;
+  animation: image-enter 500ms ease forwards;
 }
 
-#section-two .carousel .car-image.visible {
-  transform: none;
-  opacity: 1 !important;
-}
 
 #section-two .text {
   padding: 0 10% 10% 0;

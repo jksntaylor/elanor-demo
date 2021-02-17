@@ -42,6 +42,7 @@ const SectionTwo = props => {
       setCurrentCar(currentCar === 'landRover' ? 'porsche' : 'landRover')
       return
     }
+
     if (transitionRunning) return
     else setTransitionRunning(true)
 
@@ -51,14 +52,8 @@ const SectionTwo = props => {
       document.getElementById('landRover-image').className = 'car-image leaving'
       document.getElementById('porsche-image').className = 'car-image entering'
       setTimeout(() => {
-        document.getElementById('landRover-info').className = 'car-info hidden'
-        document.getElementById('porsche-info').className = 'car-info visible'
-        document.getElementById('landRover-image').className = 'car-image hidden'
-        document.getElementById('porsche-image').className = 'car-image visible'
-      }, 500);
-      setTimeout(() => {
         setTransitionRunning(false)
-      }, 600);
+      }, 550);
     }
     else if (!props.isMobile) {
       document.getElementById('landRover-info').className = 'car-info entering'
@@ -66,14 +61,8 @@ const SectionTwo = props => {
       document.getElementById('landRover-image').className = 'car-image entering'
       document.getElementById('porsche-image').className = 'car-image leaving'
       setTimeout(() => {
-      document.getElementById('landRover-info').className = 'car-info visible'
-      document.getElementById('porsche-info').className = 'car-info hidden'
-      document.getElementById('landRover-image').className = 'car-image visible'
-      document.getElementById('porsche-image').className = 'car-image hidden'
-      }, 500);
-      setTimeout(() => {
         setTransitionRunning(false)
-      }, 600);
+      }, 550);
     }
     setCurrentCar(currentCar === 'landRover' ? 'porsche' : 'landRover')
   }
