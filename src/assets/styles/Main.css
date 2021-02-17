@@ -213,7 +213,6 @@ p {
   position: absolute;
   display: block;
   opacity: 0;
-  transition: all 500ms ease;
 }
 
 #section-two .carousel .car-info.leaving {
@@ -281,8 +280,15 @@ p {
   width: 125%;
   transform: translateX(100%);
   opacity: 0;
-  transition: all 500ms ease;
 }
+
+#section-two .carousel .leaving,
+#section-two .carousel .hidden,
+#section-two .carousel .entering,
+#section-two .carousel .visible {
+  transition: all 500ms ease
+}
+
 
 #section-two .carousel .car-image.leaving {
   transform: translateX(-50%) !important;
