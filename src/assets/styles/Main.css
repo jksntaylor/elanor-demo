@@ -513,5 +513,308 @@ footer h6 {
 
 /* MOBILE STYLES */
 @media(max-width: 1023px) {
+  /* undo desktop animations */
+  #section-one .yellow-bg,
+  #section-three .map-container .porsche {
+    left: 0;
+  }
+  #section-one h1,
+  #section-one .cta,
+  #section-one .car-images,
+  #section-two .carousel,
+  #section-two .carousel .car-image,
+  #section-two .carousel .content,
+  #section-two .text h2,
+  #section-two .text p,
+  #section-three .map-container .map,
+  #section-three .map-container .porsche,
+  #section-three .map-container .delivery,
+  #section-three .text h2,
+  #section-three .text p,
+  #section-four .vehicle-swap,
+  #section-four .porsche-front,
+  #section-four .vehicle-swap .screenshot,
+  #section-four .text h2,
+  #section-four .text p,
+  #section-five .feature,
+  #section-six .dude-container,
+  #section-six .dude-container .dude,
+  #section-six .text {
+    transform: none;
+    opacity: 1;
+  }
+  #section-one .phone {
+    display: none;
+  }
+  #section-three .map-container .delivery {
+    top: 0;
+  }
+  #section-six .dude-container .benz {
+    right: 0;
+  }
+  /* end undo desktop animations */
 
+  #lander {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  section {
+    height: auto;
+    width: 100%;
+    padding: 0 5%;
+    margin-bottom: 20%;
+  }
+
+  h1 {
+    font-size: 12vw;
+    line-height: 14vw;
+  }
+
+  h2 {
+    font-size: 10vw;
+  }
+
+  p {
+    font-size: 3.4vw;
+  }
+
+  .cta {
+    font-size: 4vw;
+  }
+
+  #section-one {
+    padding-top: 10%;
+  }
+
+  #section-one .cta {
+    width: 75%;
+  }
+
+  #section-one .car-images {
+    width: 100%;
+  }
+
+  #section-one .car-images .porsche {
+    width: 70%;
+    left: 13%;
+    bottom: 35%;
+  }
+
+  #section-one .car-images .benz {
+    width: 63%;
+    left: 48%;
+    bottom: 42%;
+  }
+
+  #section-one .car-images .audi {
+    width: 60%;
+    left: -11%;
+    bottom: 37%;
+  }
+
+  #section-two {
+    flex-direction: column-reverse;
+  }
+
+  #section-two .carousel {
+    width: 100%;
+    max-height: initial;
+  }
+
+  #section-two .carousel .content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #section-two .carousel .content .buttons {
+    padding-top: 10%;
+    width: 45%;
+  }
+
+  #section-two .carousel .content .buttons img {
+    width: 40%;
+    padding: 0 6%;
+  }
+
+  #section-two .carousel .car-info {
+    width: 55%;
+    padding: 10% 5%;
+    margin: 0;
+  }
+
+  #section-two .carousel .car-info h1 {
+    font-size: 10vw;
+  }
+
+  #section-two .carousel .car-info h2 {
+    font-size: 4vw;
+  }
+
+  #section-two .carousel .car-info div {
+    margin: 10% 0;
+  }
+
+  #section-two .carousel .car-info div img {
+    width: 15%;
+  }
+
+  #section-two .carousel .car-info div h4 {
+    font-size: 5vw;
+    margin: 0 10%;
+    width: 20%;
+  }
+
+  #section-two .carousel .car-info div h3 {
+    font-size: 6vw;
+  }
+
+  #section-two .carousel .car-image {
+    width: 100%;
+    right: 0;
+    top: 80%;
+  }
+
+  #section-two .text, #section-two .text p {
+    width: 100%;
+  }
+
+  #section-three {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #section-three .text {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  #section-three .text p {
+    width: 85%;
+  }
+
+  #section-three .map-container {
+    width: 100%;
+    height: 125vw;
+    padding: 0;
+  }
+
+  #section-three .map-container .map {
+    width: 120%;
+    transform: translateX(-17%);
+  }
+
+  #section-three .map-container .delivery {
+    width: 50%;
+    height: 100%;
+    right: initial;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #section-three .porsche {
+    display: none;
+  }
+
+  #section-four {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  #section-four .text {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  #section-four .text h2 {
+    width: 80%;
+  }
+
+  #section-four .text p {
+    width: 95%;
+  }
+
+  #section-four .vehicle-swap {
+    width: 75%;
+    height: 120vw;
+  }
+
+  #section-five {
+    flex-direction: column;
+    padding: 0;
+    height: auto;
+  }
+
+  #section-five .feature {
+    width: 100%;
+    height: 100vw;
+    margin-bottom: 5%;
+  }
+
+  #section-five .feature img {
+    height: 35%;
+  }
+
+  #section-five .feature h3 {
+    font-size: 7vw;
+  }
+
+  #section-five .feature p {
+    font-size: 3vw;
+  }
+
+  #section-five .feature:nth-of-type(1) p {
+    width: 60%;
+  }
+
+  #section-five .feature:nth-of-type(2) p {
+    width: 70%;
+  }
+
+  #section-five .feature:nth-of-type(3) p {
+    width: 64%;
+  }
+
+  #section-six {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  #section-six .text {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  #section-six .text h2 {
+    width: 90%;
+  }
+
+  #section-six .text p {
+    width: 90%;
+  }
+
+  #section-six .text h5 {
+    font-size: 3vw;
+    padding-bottom: 30px;
+  }
+
+  #section-six .text .cta {
+    width: 70%;
+  }
+
+  #section-six .dude-container {
+    width: 100%;
+  }
+
+  footer {
+    padding: 10% 5%;
+  }
+
+  footer .logo-black {
+    width: 50%;
+  }
+
+  footer h6 {
+    display: none;
+  }
 }

@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
-import { Transition } from 'react-transition-group'
 import { gsap } from 'gsap'
 
 import ArrowLeft from '../assets/images/arrow-left.svg'
@@ -65,35 +64,31 @@ const SectionTwo = props => {
               <img src={ArrowLeft} alt="Arrow Left" onClick={handleClick}/>
               <img src={ArrowRight} alt="Arrow Right" onClick={handleClick}/>
             </div>
-            <Transition>
-              <div className="car-info">
-                <h1>{carData[currentCar].make}</h1>
-                <h2>{carData[currentCar].model}</h2>
-                <div className="mpg">
-                  <img src={Pump} alt="Gas Pump"/>
-                  <h4>MPG</h4>
-                  <h3>{carData[currentCar].mpg}</h3>
-                </div>
-                <div className="hp">
-                  <img src={Graph} alt="Line Graph"/>
-                  <h4>HP</h4>
-                  <h3>{carData[currentCar].hp}</h3>
-                </div>
-                <div className="zeroSixty">
-                  <img src={Gauge} alt="Speedometer"/>
-                  <h4>0-60</h4>
-                  <h3>{carData[currentCar].zeroSixty}</h3>
-                </div>
+            <div className="car-info">
+              <h1>{carData[currentCar].make}</h1>
+              <h2>{carData[currentCar].model}</h2>
+              <div className="mpg">
+                <img src={Pump} alt="Gas Pump"/>
+                <h4>MPG</h4>
+                <h3>{carData[currentCar].mpg}</h3>
               </div>
-            </Transition>
+              <div className="hp">
+                <img src={Graph} alt="Line Graph"/>
+                <h4>HP</h4>
+                <h3>{carData[currentCar].hp}</h3>
+              </div>
+              <div className="zeroSixty">
+                <img src={Gauge} alt="Speedometer"/>
+                <h4>0-60</h4>
+                <h3>{carData[currentCar].zeroSixty}</h3>
+              </div>
+            </div>
           </div>
-          <Transition>
-            <img className="car-image" src={carData[currentCar].img} alt="car" ref={carRef}/>
-          </Transition>
+          <img className="car-image" src={carData[currentCar].img} alt="car" ref={carRef}/>
         </div>
         <div className="text">
           <h2 ref={titleRef}>SELECT A VEHICLE FROM YOUR PHONE.</h2>
-          <p ref={paragraphRef}>Select from a wide range of luxury vehicles in our inventory.<br/>Drive it for a month, trade it the next for something else you have always wanted to own.</p>
+          <p ref={paragraphRef}>Select from a wide range of luxury vehicles in our inventory. Drive it for a month, trade it the next for something else you have always wanted to own.</p>
         </div>
       </section>
   )
